@@ -32,7 +32,7 @@ header h1 {
     padding: 1%;
     height: 40px;
     border-radius: 5%;
-    box-shadow: 2px 4px 2px white;
+    box-shadow: 2px 4px 2px rgb(234, 229, 229);
  }
 
 nav a:hover {
