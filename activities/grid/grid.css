@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+}
+
+.parent{
+    display: grid;
+    /*grid-template-columns: 100px 100px 100px;*/
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.child{
+    background-color: aqua;
+    /*margin: 10px;*/
+}
+
+#wrapper{
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "lside main rsdide"
+        "footer footer footer";
+}
+
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+
+main{
+    grid-area: main;
+}
+
+nav{
+    grid-area: lside;
+}
+
