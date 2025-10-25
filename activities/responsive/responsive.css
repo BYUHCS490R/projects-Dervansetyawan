@@ -1,0 +1,82 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(75, 210, 210);
+}
+
+header{
+    background-color: aqua;
+    color: rgb(48, 51, 54);
+}
+
+.sidebar h3{
+    margin: 0;
+}
+
+main h2{
+    margin: 0;
+}
+
+header h1{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(44, 175, 187);
+}
+
+nav a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(32, 134, 134);
+    color: aliceblue;
+}
+
+nav a:hover{
+    background-color: aliceblue;
+    color: rgb(37, 37, 36);
+}
+
+.main-row{
+    display: flex;
+    margin: 15px;
+}
+
+.sidebar{
+    width: 200px;
+}
+
+.card{
+    border: thin solid black;
+    box-shadow: 3px 3px 3px black;
+    width: 300px;
+    margin: 5px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer{
+    margin:15px;
+}
+
+h3{
+    margin: 10px;
+}
+
+article p{
+    margin: 10px;
+}
+
+article a{
+    margin: 10px;
+}
