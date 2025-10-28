@@ -80,3 +80,9 @@ article p{
 article a{
     margin: 10px;
 }
+
+@media ONLY screen AND (max-width: 400px) {
+    body {
+        background-color: aliceblue;
+    }
+}
