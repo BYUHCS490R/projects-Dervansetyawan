@@ -1,0 +1,86 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(220, 126, 75);
+}
+
+header{
+    background-color: rgb(251, 185, 92);
+    padding: 2px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+    background-color: rgb(240, 173, 37);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+nav a{
+    color: rgb(152, 29, 29);
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: azure;
+}
+
+.schedule{
+    border: thin solid black;
+    width: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+caption{
+    padding: 15px;
+    font-weight: bold;
+}
+
+.schedule th, .schedule td{
+    border:  3px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+thead tr{
+    background-color: rgb(255, 174, 0);
+}
+
+.schedule tbody tr:nth-child(even){
+    background-color: rgb(236, 184, 54);
+}
+
+.schedule tbody tr:nth-child(odd){
+    background-color: rgb(222, 192, 59);
+}
+
+.parent{
+    display: flex;
+}
+
+main{
+    border: 2px solid black;
+    padding: 1%;
+    margin: 1%;
+    width: 70%;
+    box-shadow: 2px 2px 2px;
+    background-color: rgb(232, 184, 87);
+}
+
+.sidebar{
+    border: 2px solid black;
+    padding: 1%;
+    margin: 1%;
+    width: 30%;
+    box-shadow: 2px 2px 2px;
+    background-color: rgb(232, 184, 87);
+}
+
+footer{
+    font-weight: bold;
+}
+
