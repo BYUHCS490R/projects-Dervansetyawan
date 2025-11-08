@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Dervans Web Design</h1>
+    </header>
+    <main>
+        <h1>Forms</h1>
+        <form action="formprocess.html" method="post">
+        <div>
+            <label for="fname">Full Name :</label>
+            <input type="text" name="fullname" placeholder="Full Name" id="fname">
+        </div>
+        <div>
+            <label for="fname">Email :</label>
+            <input type="email" name="fullname" placeholder="your@gmail.com" id="fname">
+        </div>
+        <div>
+            <label for="pass">Password :</label>
+            <input type="password" name="pass" placeholder="Password" id="pass">
+        </div>
+        <div>
+            <label for="state">State :</label>
+            <select name="state" id="state">
+                <option value="blank">-----</option>
+                <option value="CA">California</option>
+                <option value="UT">Utah</option>
+                <option value="HI" selected>Hawaii</option>
+            </select>
+        </div>
+        <div>
+            <label><input type="checkbox" checked>I agree to the terms</label>
+        </div>
+        <div>
+            Gender
+            <label><input type="radio" name="gender" value="Male"> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+        </div>
+        <div>
+            <label for="comment">Comments :</label>
+            <textarea name="comment" id="comment">Hello</textarea>
+        </div>
+            <input type="submit" value="Sign Up">
+        </form>
+        <h2>My Answers</h2>
+        <p>The action attribute tells the browser where to send the form data when the user clicks submit.</p>
+        <p>The method attribute tells the browser how to send the data, either using GET or POST.</p>
+        <p>GET puts the form data in the URL, so it’s visible and mainly used for getting information. POST sends the data hidden in the request body, making it better for sending or saving information, like passwords or messages.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dervan Setyawan</p>
+    </footer>
+</body>
+</html>
