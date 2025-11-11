@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="formstyling.css">
+</head>
+<body>
+    <header>
+        <h1>Dervans Web Design</h1>
+    </header>
+    <main>
+        <h1>Forms</h1>
+        <form action="formprocess.html" method="post">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">Full Name :</label>
+                    <input type="text" name="fullname" placeholder="Full Name" id="fname">
+                </div>
+                <div class="form-row">
+                    <label for="fname">Email :</label>
+                    <input type="email" name="fullname" placeholder="your@gmail.com" id="fname">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password :</label>
+                    <input type="password" name="pass" placeholder="Password" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="state">State :</label>
+                    <select name="state" id="state">
+                        <option value="blank">-----</option>
+                        <option value="CA">California</option>
+                        <option value="UT">Utah</option>
+                        <option value="HI" selected>Hawaii</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" checked>I agree to the terms</label>
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Gender</div>
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments :</label>
+                    <textarea name="comment" id="comment">Hello</textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
+        </form>
+        <h2>My Answers</h2>
+        <p>We can style our form in many ways using CSS. We can change colors, fonts, and sizes, add borders or background colors, and use padding and margins to give space between elements. We can also use Flexbox or Grid to arrange the layout neatly. Styling our form makes it look more attractive and easier for people to use.</p>
+        <p>We can use Flexbox to make our website work well on different screen sizes. On desktop screens, we can place items next to each other, and on mobile screens, Flexbox can automatically move them into a column. This helps our design stay clean, flexible, and easy to use on any device.</p>
+    <footer>
+        <p>&copy; 2025 Dervan Setyawan</p>
+    </footer>
+</body>
+</html>
