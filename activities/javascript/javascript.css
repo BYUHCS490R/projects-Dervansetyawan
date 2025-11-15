@@ -1,0 +1,84 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(96, 195, 225);
+}
+
+header{
+    color: rgb(14, 83, 136);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding: 3px;
+    border: solid rgb(33, 101, 106);
+    text-align: center;
+    background-color: rgb(217, 174, 117);
+}
+
+main h1{
+    color: rgb(25, 80, 131);
+    padding: 3px;
+    text-align: center;
+    border: solid;
+    background-color: rgb(213, 186, 151);
+}
+
+.form-row, .check-row{
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.form-row label, .spacer{
+    width: 150px;
+    text-align: right;
+}
+
+.form-row input:not([type='submit']), .form-row select, .form-row textarea {
+    padding: 8px;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(174, 239, 239);
+}
+
+.form-row input:not([type='submit']):focus, .form-row select:focus, .form-row textarea:focus {
+    background-color: rgb(72, 193, 204);
+    padding: 5px 20px;
+    border-radius: 3px;
+}
+
+.form-row input[type='submit'] {
+    background-color: rgb(47, 164, 164);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+fieldset{
+    background-color: rgb(59, 155, 181);
+    width: 50%;
+    margin: auto;
+    border: black double;
+    border-radius: 10px;
+}
+
+legend{
+    background-color: rgb(94, 211, 221);
+    padding: 15px;
+    border: rgb(27, 27, 27) 2px solid;
+    border-radius: 10px;
+}
+
+footer{
+    color: rgb(15, 44, 67);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    padding: 3px;
+}
+
+@media ONLY screen AND (max-width: 480px) {
+    .form-row, .check-row{
+        flex-direction: column;
+    }
+
+    .form-row label, .spacer{
+        text-align: left;
+    }
+}
