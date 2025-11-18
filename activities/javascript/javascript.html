@@ -70,7 +70,7 @@
     </footer>
     <script>
         document.getElementById('myForm').addEventListener('submit',function(event) {
-            even.preventDefault();
+            event.preventDefault();
             alert("Form Submitted");
 
             const fullname = document.getElementById('fname').value;
@@ -78,7 +78,7 @@
             const password = document.getElementById('pass').value;
             const age = document.getElementById('age').value;
 
-            if (!fullname || !eamil) {
+            if (!fullname || !email) {
                 alert("You need a name and email");
                 return
             }
