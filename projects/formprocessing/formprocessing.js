@@ -16,7 +16,7 @@ document.getElementById('myForm').addEventListener('submit',function(event) {
         return
     }
 
-    if (comments.length > 50) {
+    if (0 < comments.length > 50) {
         alert("Comment is too long (max 50 characters)")
     }
 
