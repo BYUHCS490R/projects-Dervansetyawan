@@ -16,6 +16,10 @@ document.getElementById('myForm').addEventListener('submit',function(event) {
         return
     }
 
+    if (comment.length > 50) {
+        alert("Comment is too long (max 50 characters)")
+    }
+
     const formData = {
         name: fullname,
         email: email,
