@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="formprocessing.css">
+</head>
+<body>
+    <header>
+        <h1>Dervans Web Design</h1>
+    </header>
+    <main>
+        <h1>Forms</h1>
+        <div id="message"></div>
+        <form action="formprocess.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">Full Name :</label>
+                    <input type="text" name="fullname" placeholder="Full Name" id="fname">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" placeholder="your@gmail.com" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password :</label>
+                    <input type="password" name="password" placeholder="Password" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age :</label>
+                    <input type="number" name="age" placeholder="Age" id="age">
+                </div>
+                <div class="form-row">
+                    <label for="state">State :</label>
+                    <select name="state" id="state">
+                        <option value="blank">-----</option>
+                        <option value="CA">California</option>
+                        <option value="UT">Utah</option>
+                        <option value="HI" selected>Hawaii</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox">I agree to the terms</label>
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Gender</div>
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments :</label>
+                    <textarea name="comment" placeholder="Hello" id="comment"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
+        </form>
+        <h2>My Answers</h2>
+        <p>AJAX is a way for a website to send or get data from a server without reloading the whole page. It makes the page feel faster and smoother, like when we send a message or click “like” and the page updates instantly.</p>
+        <p>We put JavaScript in a separate file to keep the code clean and organized. It makes the website easier to read, easier to fix, and it loads faster because the browser can save (cache) the file.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dervan Setyawan</p>
+    </footer>
+    <script src="formprocessing.js"></script>
+</body>
+</html>
