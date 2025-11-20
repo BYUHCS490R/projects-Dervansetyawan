@@ -11,6 +11,11 @@ document.getElementById('myForm').addEventListener('submit',function(event) {
         return
     }
 
+    if (fullname.length < 5) {
+    alert("Username must be at least 5 characters long");
+    return false;
+    }
+
     if (!age || age <18) {
         alert("You need to be 18");
         return
