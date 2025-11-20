@@ -11,7 +11,7 @@ document.getElementById('myForm').addEventListener('submit',function(event) {
         return
     }
 
-    if (fullname.length < 5) {
+    if (fullname.length < 3) {
     alert("Username must be at least 5 characters long");
     return false;
     }
