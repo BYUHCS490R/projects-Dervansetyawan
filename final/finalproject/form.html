@@ -19,39 +19,26 @@
         <a href="form.html" class="current">Form</a>
     </nav>
     <main>
-        <h2>Form</h2>
+        <h2>Share your experiences</h2>
         <div id="message"></div>
         <form action="form.html" method="post" id="myForm">
             <fieldset>
-                <legend>Sign Up</legend>
+                <legend>Journey</legend>
                 <div class="form-row">
                     <label for="fname">Full Name :</label>
                     <input type="text" name="fullname" placeholder="Full Name" id="fname">
+                </div>
+                <div class="form-row">
+                    <label for="country">Country :</label>
+                    <input type="text" name="country" placeholder="Country" id="Country">
                 </div>
                 <div class="form-row">
                     <label for="email">Email :</label>
                     <input type="email" name="email" placeholder="your@gmail.com" id="email">
                 </div>
                 <div class="form-row">
-                    <label for="pass">Password :</label>
-                    <input type="password" name="password" placeholder="Password" id="pass">
-                </div>
-                <div class="form-row">
                     <label for="age">Age :</label>
                     <input type="number" name="age" placeholder="Age" id="age">
-                </div>
-                <div class="form-row">
-                    <label for="state">State :</label>
-                    <select name="state" id="state">
-                        <option value="blank">-----</option>
-                        <option value="CA">California</option>
-                        <option value="UT">Utah</option>
-                        <option value="HI" selected>Hawaii</option>
-                    </select>
-                </div>
-                <div class="check-row">
-                    <div class="spacer"></div>
-                    <label><input type="checkbox">I agree to the terms</label>
                 </div>
                 <div class="check-row">
                     <div class="spacer">Gender</div>
@@ -59,12 +46,12 @@
                     <label><input type="radio" name="gender" value="Female"> Female</label>
                 </div>
                 <div class="form-row">
-                    <label for="comment">Comments :</label>
-                    <textarea name="comment" placeholder="Hello" id="comment"></textarea>
+                    <label for="comment">Journey :</label>
+                    <textarea name="comment" placeholder="Share your journey" id="comment"></textarea>
                 </div>
                 <div class="form-row">
                     <div class="spacer"></div>
-                    <input type="submit" value="Sign Up">
+                    <input type="submit" value="Submit">
                 </div>
             </fieldset>
         </form>

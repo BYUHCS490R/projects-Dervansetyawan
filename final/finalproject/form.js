@@ -2,8 +2,8 @@ document.getElementById('myForm').addEventListener('submit',function(event) {
     event.preventDefault();
     
     const fullname = document.getElementById('fname').value;
+    const country = document.getElementById('country').value;
     const email = document.getElementById('email').value;
-    const password = document.getElementById('pass').value;
     const age = document.getElementById('age').value;
 
     if (!fullname || !email) {
@@ -18,8 +18,8 @@ document.getElementById('myForm').addEventListener('submit',function(event) {
 
     const formData = {
         name: fullname,
+        country: country,
         email: email,
-        password: password,
         age: age
     };
 
