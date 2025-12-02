@@ -28,7 +28,7 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover{
+a:hover{
     color: rgb(10, 10, 10);
 }
 
@@ -54,17 +54,25 @@ main{
     font-size: 13pt;
 }
 
-button{
+.button{
     padding: 10px;
     border: black solid;
     border-radius: 10px;
     background: rgba(40, 108, 60, 0.8);
     color: aliceblue;
     font-size: 12pt;
+    text-decoration: none;
 }
 
 .next{
-    text-align: right;
+    padding: 10px;
+    border: black solid;
+    border-radius: 10px;
+    background: rgba(40, 108, 60, 0.8);
+    color: aliceblue;
+    font-size: 12pt;
+    text-decoration: none;
+    float: right;
 }
 
 .card{
