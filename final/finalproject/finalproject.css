@@ -1,20 +1,18 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background : url(background.jpg) no-repeat;
-    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header{
-    margin: 1%;
     font-size: 15pt;
+    text-align: center;
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
-    background: rgba(86, 140, 102, 0.8);
-    margin: 1%;
+    background: rgba(40, 108, 60, 0.8);
     font-size: 14pt;
+    margin: 1%;
     padding: 8px;
     border: 2px solid black;
 }
@@ -33,29 +31,39 @@ nav a:hover{
 }
 
 main{
+    padding: 5px 25px 25px 25px;
     margin: 1%;
-    box-shadow: 0 10px 30px black;
     border: 2px solid black;
-    padding: 0 20px 20px 20px;
-    color: rgb(245, 248, 246);
-    background: rgba(0, 0, 0, 0.4);
+    color: black;
+    background: rgb(178, 201, 179, 0.6);
 }
 
 .content{
     display: flex;
-    gap: 10%;
+    justify-content: space-evenly;
 }
 
 .sentence{
-    padding: 5%;
+    text-align: center;
+    font-size: 13pt;
 }
 
-.paragraph{
-    flex: 1;
+button{
+    padding: 10px;
+    border: black solid;
+    border-radius: 10px;
+    background: rgba(40, 108, 60, 0.8);
+    color: aliceblue;
+    font-size: 12pt;
 }
 
-p{
-    font-size: 14pt;
+.next{
+    text-align: right;
+}
+
+.card{
+    display: flex;
+    gap: 25px;
 }
 
 .park{
@@ -66,11 +74,11 @@ p{
     width: 100%;
     margin: auto;
     overflow: auto;
-    background-color: rgb(137, 190, 190);
+    background-color: rgb(124, 189, 189);
 }
 
 .park thead tr{
-    background: rgb(107, 182, 157);
+    background: rgb(51, 125, 100);
     color: aliceblue;
 }
 
@@ -80,7 +88,7 @@ p{
 }
 
 .park tbody tr:nth-child(odd){
-    background-color: rgb(113, 164, 144);
+    background-color: rgb(128, 204, 172);
 }
 
 .form-row, .check-row{
@@ -108,13 +116,13 @@ p{
 }
 
 .form-row input[type='submit'] {
-    background-color: rgb(78, 203, 93);
+    background-color: rgb(122, 249, 137);
     padding: 5px 20px;
     border-radius: 10px;
 }
 
 fieldset{
-    background-color: rgb(101, 142, 113);
+    background-color: rgb(136, 187, 151);
     width: 50%;
     margin: auto;
     border: black double;
@@ -122,7 +130,7 @@ fieldset{
 }
 
 legend{
-    background-color: rgb(82, 181, 102);
+    background-color: rgb(132, 221, 142);
     padding: 15px;
     border: rgb(27, 27, 27) 2px solid;
     border-radius: 10px;
@@ -132,15 +140,38 @@ footer{
     margin: 1%;
     font-size: 14pt;
     font-weight: bold;
-    color: aliceblue;
+    color: black;
 }
 
 @media ONLY screen AND (max-width: 480px) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
     .form-row, .check-row{
         flex-direction: column;
     }
 
     .form-row label, .spacer{
         text-align: left;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .card{
+        flex-direction: column;
+    }
+
+    .video{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: 100%;
     }
 }

@@ -5,9 +5,10 @@ document.getElementById('myForm').addEventListener('submit',function(event) {
     const country = document.getElementById('country').value;
     const email = document.getElementById('email').value;
     const age = document.getElementById('age').value;
+    const comment = document.getElementById('comment').value;
 
-    if (!fullname || !email) {
-        alert("You need a name and email");
+    if (!fullname || !country || !comment) {
+        alert("You need a name, country and journey");
         return
     }
 
@@ -20,7 +21,8 @@ document.getElementById('myForm').addEventListener('submit',function(event) {
         name: fullname,
         country: country,
         email: email,
-        age: age
+        age: age,
+        comment: comment
     };
 
     console.log(formData); 
